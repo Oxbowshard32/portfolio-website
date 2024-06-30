@@ -6,11 +6,11 @@ const HeroSection = () => {
 	return (
 		<section>
 			<div className="grid grid-cols-1 lg:grid-cols-12">
-				<div className="col-span-7 place-self-center">
-					<h1 className="text-white mb-4 text-4xl lg:text-6cl font-extrabold">
+				<div className="col-span-7 place-self-center text-center sm:text-left">
+					<h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
 						Hi, I'm Adrian
 					</h1>
-					<p className="text-[#ADB7BE] mb-6 text-lg lg:text-xl">
+					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Nisi molestiae omnis blanditiis tempora aspernatur minus
 						iste magni numquam perspiciatis deserunt sapiente
@@ -18,6 +18,12 @@ const HeroSection = () => {
 						cumque quia.
 					</p>
 					<div>
+						<button className="px-6 py-3 w-full rounded-full sm:w-fit mr-4 bg-white hover:bg-slate-200 text-black">
+							Hire Me
+						</button>
+						<button className="px-6 py-3 w-full rounded-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+							Download CV
+						</button>
 						<Link
 							href="/#contact"
 							className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
